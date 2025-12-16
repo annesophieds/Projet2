@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    background-image: url("accueil-cheval.png");
+    background-size: cover;
+    background-position: center -300px;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 918px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.accueil {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 15%; 
+    right: 32%;
+    opacity: 0.95;
+}
+
+.accueil-content {
+    text-align: center;
+}
+
+.accueil h1 {
+    font-family: "Merriweather", serif;
+    color: white;
+    font-size: 3.2rem;
+    line-height: 1.05;
+    font-weight: normal;
+    margin-bottom: 2.2rem;
+}
+
+.menu {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(4px);
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0px 15px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem 2rem;
+
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.95rem;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 6px;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+
+.menu-list a:hover {
+    border-bottom: 2px solid #4a7f7a;
+}
+
+.menu-list a.is-active {
+    border-bottom-color: #4a7f7a;
+    color: #4a7f7a;
+}
+
+.intro {
+    padding: 4rem 2rem;
+    background: #f2f0ee;
+}
+
+.intro h2 {
+    color: #4a7f7a;
+    font-weight: normal;
+    max-width: 800px;
+}
