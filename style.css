@@ -1,98 +1,92 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     color: #333;
-    background-image: url("accueil-cheval.png");
+}
+
+.background-cheval{
+    position: fixed;
+    inset: 0;
+    background: url("accueil-cheval.png") no-repeat;
     background-size: cover;
-    background-position: center -300px;
-    background-attachment: fixed;
+    background-position: center -300px; 
+    z-index: -1;
 }
 
-.wrapper {
-    max-width: 918px;
-    margin: 0 auto;
-    padding: 0 1rem;
+#wrapper{
+    max-width: 960px;      
+    margin: 200px auto 0;        
 }
 
-.accueil {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    position: absolute;
-    top: 15%; 
-    right: 32%;
-    opacity: 0.95;
-}
-
-.accueil-content {
+.accueil{    
+    margin-bottom: 60px;
+    position: relative;  
     text-align: center;
 }
 
-.accueil h1 {
+.accueil-top{
+    position: relative;
+    height: 290px;        
+    margin-bottom: 100px;   
+}
+
+.logo{
+    float: right;
+}
+
+.site-title{
     font-family: "Merriweather", serif;
-    color: white;
-    font-size: 3.2rem;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: normal;
     line-height: 1.05;
-    font-weight: normal;
-    margin-bottom: 2.2rem;
+    clear: right;
+    padding-top: 35px;
 }
 
-.menu {
-    display: inline-block;
-    padding: 1.5rem 3rem;
-    background: rgba(255, 255, 255, 0.85);
+.menu{
+    width: 100%;
+    background: rgba(255,255,255,0.85);
     backdrop-filter: blur(4px);
+    padding: 18px 22px;
 }
 
-.menu-list {
-    list-style: none;
-    margin: 0px 15px;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.2rem 2rem;
+.menu-list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
+  gap: 14px 26px;
 }
 
-.menu-list a {
-    text-decoration: none;
-    color: gray;
-    font-size: 0.95rem;
-    border-bottom: 3px solid transparent;
-    padding-bottom: 6px;
-    font-size: 16px;
-    line-height: 1.5;
+.menu-list a{
+  display: inline-block;
+  text-decoration: none;
+  color: #777;
+  font-size: 18px;
+  line-height: 1.5;
 
+  padding: 10px 8px;
+  border-bottom: 3px solid transparent;
 }
 
-
-.menu-list a:hover {
-    border-bottom: 2px solid #4a7f7a;
+.menu-list a.is-active{
+  color: #307D7F;
+  border-bottom-color: #307D7F;
 }
 
-.menu-list a.is-active {
-    border-bottom-color: #4a7f7a;
-    color: #4a7f7a;
+.main{
+  margin-top: 0;
 }
 
-.intro {
-    padding: 4rem 2rem;
-    background: #f2f0ee;
-}
-
-.intro h2 {
-    color: #4a7f7a;
-    font-weight: normal;
-    max-width: 800px;
+.intro{
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(4px);
+  padding: 55px 35px;
 }
