@@ -11,7 +11,7 @@ body {
     line-height: 1.5;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "Merriweather", serif;
     font-weight: normal;
     margin: 0;
@@ -30,6 +30,10 @@ h2 {
     line-height: 1.25;
 }
 
+h3 {
+    font-size: 24px;
+}
+
 .background-cheval {
     position: fixed;
     height: 100vh;
@@ -37,7 +41,7 @@ h2 {
     top: 0;
     left: 0;
     z-index: -1;
-    background: url("accueil-cheval.png");
+    background: url("images-accueil/accueil-cheval.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 9.08% 74.3534%; 
@@ -174,22 +178,104 @@ main {
 .grid {
     display: grid;
     width: 100%;
-    padding-top: 24px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 19px;
+    padding-top: 40px;
+    grid-template-columns: 36.64% 61.35%;
+    grid-gap: 20px;
 }
 
-.intro-text {
+.grid a {
+    display: inline-block;
+    font-size: 14px;
+    
+    color: rgb(0,0,255);
+    font-weight: 700;
+}
+
+.grid > div:nth-child(2) a {
+    font-size: 18px;
+    font-family: Calibri;
+
+}
+
+.grid > div:nth-child(odd) {
+    justify-self: center;
+}
+
+.grid > div:nth-child(odd) img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid > div:nth-child(odd) p{
+  margin-top: 8px;
+  text-align: center;               
+  font-size: 13px;
+}
+
+.grid > div:nth-child(even){
+  justify-self: stretch;
+}
+
+.intro-text > div:nth-child(2) p {
+    font-family: Calibri, "Open Sans", Arial, sans-serif;
+    font-size: 18px;
     text-align: justify;
     font-weight: 300;
-    font-size: 18px;
-    color: #08343e;
-    font-family: Calibri, "Open Sans", Arial, sans-serif;
+    color:#000;
+    line-height: 1.5;
 }
 
-strong {
+.intro-text strong {
     font-weight: 700;
+    color: inherit;
+}
+
+.first-text strong:first-of-type {
+    color: #08343e;;
+}
+
+.intro-text h3 + p {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.75;
+    margin-top: 6px;
+
+}
+
+.text {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 25px;
+}
+
+.last-image {
+    padding: 5px;
+    color: rgb(8, 52, 62);
+}
+
+.last-image img {
+    float: left;
+    margin-right: 20px;
+}
+
+.last-image h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.last-image p {
+    font-size: 15px;
+}
+
+.last-image a {
+    font-weight: 700;
+    color: rgb(8, 52, 62);
+}
+
+.separator {
+    border-bottom: 4px solid #307D7F;
+    padding: 5px;
 }
 
 footer {
