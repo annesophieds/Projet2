@@ -178,26 +178,27 @@ main {
 .grid {
     display: grid;
     width: 100%;
-    padding-top: 24px;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 19px;
+    padding-top: 40px;
+    grid-template-columns: 36.64% 61.35%;
+    grid-gap: 20px;
 }
 
 .grid a {
     display: inline-block;
     font-size: 14px;
-    font-family: Calibri;
+    
     color: rgb(0,0,255);
     font-weight: 700;
 }
 
 .grid > div:nth-child(2) a {
     font-size: 18px;
-    
+    font-family: Calibri;
+
 }
 
 .grid > div:nth-child(odd) {
-    justify-self: start;
+    justify-self: center;
 }
 
 .grid > div:nth-child(odd) img {
@@ -221,7 +222,8 @@ main {
     font-size: 18px;
     text-align: justify;
     font-weight: 300;
-    color:#000
+    color:#000;
+    line-height: 1.5;
 }
 
 .intro-text strong {
@@ -229,16 +231,51 @@ main {
     color: inherit;
 }
 
-.intro-text strong:first-of-type {
-
+.first-text strong:first-of-type {
     color: #08343e;;
 }
 
 .intro-text h3 + p {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
-    line-height: 1.5;
+    line-height: 1.75;
+    margin-top: 6px;
 
+}
+
+.text {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 25px;
+}
+
+.last-image {
+    padding: 5px;
+    color: rgb(8, 52, 62);
+}
+
+.last-image img {
+    float: left;
+    margin-right: 20px;
+}
+
+.last-image h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.last-image p {
+    font-size: 15px;
+}
+
+.last-image a {
+    font-weight: 700;
+    color: rgb(8, 52, 62);
+}
+
+.separator {
+    border-bottom: 4px solid #307D7F;
+    padding: 5px;
 }
 
 footer {
