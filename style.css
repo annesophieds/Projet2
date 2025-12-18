@@ -132,6 +132,16 @@ main {
     background-color: rgba(243,243,243,0.8);
 }
 
+main a {
+    color: rgb(0,0,255);
+    font-weight: 700;
+}
+
+a.link-strong {
+    font-weight: 700;
+    color: rgb(8, 52, 62);
+}
+
 .fb-placeholder-button {
     background: #4267b2;
     border: 1px solid #4267b2;
@@ -186,9 +196,6 @@ main {
 .grid a {
     display: inline-block;
     font-size: 14px;
-    
-    color: rgb(0,0,255);
-    font-weight: 700;
 }
 
 .grid > div:nth-child(2) a {
@@ -232,7 +239,7 @@ main {
 }
 
 .first-text strong:first-of-type {
-    color: #08343e;;
+    color: #08343e;
 }
 
 .intro-text h3 + p {
@@ -268,16 +275,132 @@ main {
     font-size: 15px;
 }
 
-.last-image a {
-    font-weight: 700;
-    color: rgb(8, 52, 62);
-}
-
 .separator {
     border-bottom: 4px solid #307D7F;
     padding: 5px;
 }
 
+.stages h1 {
+    padding-bottom: 25px;
+}
+
+.stages .stage-row{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.stages .stage-row img{
+  width: 236px;
+  height: auto;
+  display: block;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.stages strong {
+    font-weight: 700;
+    color: #08343e;
+}
+
+.duo-gallery {
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.duo-buttons {
+    margin-top: 30px;
+}
+
+.btn-stage {
+    display: block;
+    width: fit-content;
+    background-color: rgb(48,125, 127);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 2px;
+    letter-spacing: .3px;
+}
+
+.stage-poney {
+    margin-bottom: 40px;
+}
+
+.plans-services {
+    display: grid;
+    grid-template-columns: 28fr 28fr 44fr;
+    gap: 40px;
+    max-width: 960px;
+    margin-top: 40px;
+}
+
+.underline {
+    height: 4px;
+    background-color: #307D7F;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: rgb(119, 24, 71);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.info-col ul {
+    padding-left: 45px;
+    padding-top: 20px;
+}
+
+.services li:first-child a {
+    color: rgb(0, 102, 204);
+}
+
+.services li:nth-child(even) a {
+    color: rgb(0,0,255);
+    font-weight: 300;
+}
+
+.services li:nth-child(odd):not(:first-child) a {
+    color: rgb(48, 125, 127);
+    font-weight: 300;
+}
+
+.services li:nth-child(odd):not(:first-child) a:hover {
+    color: #3E3E3E;
+    transition: color .3s ease-in-out;
+} 
+
+.services span {
+    color: rgb(0,0,255);
+    padding-left: 32px;
+}
+
+.services strong {
+    font-weight: 700;
+}
+
+
+.labels-top {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.labels-top img {
+    height: 101px;
+    align-self: flex-start;
+}
+
+
 footer {
     background-color: rgba(243,243,243,0.8);
+    min-height: 200px;
 }
