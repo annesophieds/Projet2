@@ -1,16 +1,13 @@
-<<<<<<< Updated upstream
 /* Alice Rivest (20305611) */
 
 * { 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
-=======
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
->>>>>>> Stashed changes
 }
 
 body {
@@ -215,12 +212,9 @@ a.link-strong {
 .grid a {
     display: inline-block;
     font-size: 14px;
-<<<<<<< Updated upstream
-=======
 
     color: rgb(0, 0, 255);
     font-weight: 700;
->>>>>>> Stashed changes
 }
 
 .grid>div:nth-child(2) a {
@@ -265,10 +259,7 @@ a.link-strong {
 
 .first-text strong:first-of-type {
     color: #08343e;
-<<<<<<< Updated upstream
-=======
     ;
->>>>>>> Stashed changes
 }
 
 .intro-text h3+p {
@@ -304,8 +295,6 @@ a.link-strong {
     font-size: 15px;
 }
 
-<<<<<<< Updated upstream
-=======
 .last-image a {
     font-weight: 700;
     color: rgb(8, 52, 62);
@@ -325,13 +314,11 @@ a.link-strong {
 
 
 
->>>>>>> Stashed changes
 .separator {
     border-bottom: 4px solid #307D7F;
     padding: 5px;
 }
 
-<<<<<<< Updated upstream
 .stages h1 {
     padding-bottom: 25px;
 }
@@ -449,7 +436,8 @@ a.link-strong {
 .labels-top img {
     height: 101px;
     align-self: flex-start;
-=======
+}
+
 .contact {
     background-color: rgba(230, 230, 230, .8);
     padding-top: 10;
@@ -458,77 +446,183 @@ a.link-strong {
 
 }
 
-.container{
-    margin-left: 5%;
+.contactez-section{
+  background-color: rgba(230,230,230,0.8);
+  padding: 60px 0 100px;
 }
-.contact-form label{
-  float: none;
-  clear: none;
-  text-align: left;
-  display: block;
-  margin-top: 0;
-  padding-right: 0;
-  
+
+.contactez-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 
-.field input,
-.field textarea{
+.contactez-layout{
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+
+.contactez-left{
+  font-family: "Open Sans", sans-serif;
+}
+
+.contactez-intro{
+    font-size: 150%;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+
+
+}
+
+.contactez-socials{
+  display: flex;
+  gap: 14px;
+}
+
+.contactez-social{
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background-color: #307D7F;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.contactez-title{
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 52px;
+  font-weight: normal;
+  color: #307D7F;
+  margin-bottom: 35px;
+}
+
+
+.contactez-form{
+  display: grid;
+  gap: 20px;
+}
+
+.contactez-row{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 25px;
+  align-items: center;
+}
+
+.contactez-form label{
+  font-size: 26px;
+  font-weight: 300;
+  color: #222;
+  margin: 0;
+}
+
+
+
+.contactez-required{
+  color: #d33;
+}
+
+.contactez-form input,
+.contactez-form textarea{
   width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 16px 14px;
+  border: 2px solid rgba(0,0,0,0.35);
+  background: rgba(255,255,255,0.9);
+  outline: none;
 }
 
 
-.field label {
-    color: #4b0a0a;
-    margin-top: 2%;
-    margin-bottom: 0;
+.contactez-row-message{
+  align-items: start;
 }
 
-.red {
-    color: #d33;
-}
-
-
-.field input,
-.field textarea {
-    width: 99%;
-    box-sizing: border-box;
-    font-size: 20px;
-    padding: 18px 16px;
-    border: 1px solid rgba(0, 0, 0, .35);
-    background: rgba(255, 255, 255, .85);
-}
-
-label {
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
-}
-
-.contact h2 {
-    color: #307D7F;
+.contactez-row-message textarea{
+  min-height: 260px;
+  resize: vertical;
 }
 
 
-
-input,
-textarea {
-    margin-top: 0;
+.contactez-privacy{
+  text-align: center;
+  font-size: 22px;
+  margin: 15px 0 10px;
+  font-weight: 300;
+  font-family: "Open sans", sans-serif;
 }
 
-.red {
-    color: red;
+.contactez-privacy a{
+  color: #307D7F;
+  text-decoration: underline;
 }
 
-.field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
->>>>>>> Stashed changes
+/* bouton */
+.contactez-btn{
+  justify-self: center;
+  width: 260px;
+  padding: 16px 24px;
+  border: none;
+  background-color: #307D7F;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
+
+.contactez-btn:hover{
+  filter: brightness(0.95);
+}
+
+.contactez-note {
+    margin-top: 5%;
+    font-family: "Open sans", sans-serif;
+    font-weight: 300;
+}
+
+.contactez-adresse {
+    margin-top: 5%;
+    line-height: 1.3;
+    font-weight: bold;
+    font-family: "Open sans", sans-serif;
+}
+
+@media (max-width: 770px){
+  .contactez-layout{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contactez-row{
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .contactez-title{
+    font-size: 44px;
+  }
+
+  .contactez-form label{
+    font-size: 22px;
+  }
+
+  .contactez-btn{
+    width: min(520px, 100%);
+  }
+}
+
 
 
 footer {
-<<<<<<< Updated upstream
     background-color: rgba(243,243,243,0.8);
 }
 
@@ -614,7 +708,5 @@ footer {
 .gite h3 {
     padding-left: 0;
 }
-=======
     background-color: rgba(230, 230, 230, .8);
 }
->>>>>>> Stashed changes
