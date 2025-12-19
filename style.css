@@ -448,7 +448,7 @@
     }
 
     .contactez-section {
-        background-color: rgba(230, 230, 230, 0.8);
+        background-color: rgba(230, 230, 230, .8);
         padding: 60px 0 100px;
     }
 
@@ -616,7 +616,8 @@
 
 
     footer {
-        background-color: rgba(243, 243, 243, 0.8);
+        background-color: rgba(218, 218, 218, .8);
+        padding:20%;
     }
 
     .spacer {
