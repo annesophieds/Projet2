@@ -1,9 +1,10 @@
 /* Alice Rivest (20305611) */
 
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,16 +14,18 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Merriweather", serif;
     font-weight: normal;
     margin: 0;
     padding: 5px;
 
-} 
+}
 
 h1 {
-    font-size:48px;
+    font-size: 48px;
     line-height: 1.05;
     color: #307D7F;
 }
@@ -52,16 +55,16 @@ p {
     background: url("images-accueil/accueil-cheval.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 9.08% 74.3534%; 
+    background-position: 9.08% 74.3534%;
 }
 
-.head-section{    
+.head-section {
     text-align: center;
     padding: 0 40px;
-   
+
 }
 
-.alignment{
+.alignment {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -71,11 +74,11 @@ p {
     margin: 200px 0 100px;
 }
 
-.logo{
+.logo {
     float: right;
 }
 
-.site-title{
+.site-title {
     font-family: "Merriweather", serif;
     color: #fff;
     font-size: 3rem;
@@ -104,23 +107,24 @@ nav li {
 
 .menu {
     width: 100%;
-    background-color: rgba(243,243,243,0.9);
+    background-color: rgba(243, 243, 243, 0.9);
     border-radius: 2px;
     text-align: center;
     margin-bottom: 60px;
 }
 
-.menu-list a{
+.menu-list a {
     border-bottom: 4px solid transparent;
 }
 
-.menu-list a.is-active, .menu-list a:hover {
+.menu-list a.is-active,
+.menu-list a:hover {
     color: #307D7F;
-    border-bottom-color:#307D7F;
+    border-bottom-color: #307D7F;
 }
 
 .subnavigation {
-    background-color: rgba(243,243,243,0.8);
+    background-color: rgba(243, 243, 243, 0.8);
     padding: 0 40px;
 }
 
@@ -129,19 +133,20 @@ nav li {
     border-top: 4px solid transparent;
 }
 
-.subnavigation a.is-active, .subnavigation a:hover {
+.subnavigation a.is-active,
+.subnavigation a:hover {
     color: #307D7F;
-    border-top-color:#307D7F;
+    border-top-color: #307D7F;
 }
 
 
 main {
-    padding-top: 60px;
-    background-color: rgba(243,243,243,0.8);
+    padding: 60px 5% 5% 5% ;
+    background-color: rgba(243, 243, 243, 0.8);
 }
 
 main a {
-    color: rgb(0,0,255);
+    color: rgb(0, 0, 255);
     font-weight: 700;
 }
 
@@ -181,16 +186,16 @@ a.link-strong {
 }
 
 .video-wrapper {
-  width: 425px;       
-  aspect-ratio: 16 / 9;
-  margin: 0 auto;
+    width: 425px;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
 }
 
 .video-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
 }
 
 .grid {
@@ -204,40 +209,43 @@ a.link-strong {
 .grid a {
     display: inline-block;
     font-size: 14px;
+
+    color: rgb(0, 0, 255);
+    font-weight: 700;
 }
 
-.grid > div:nth-child(2) a {
+.grid>div:nth-child(2) a {
     font-size: 18px;
     font-family: Calibri;
 
 }
 
-.grid > div:nth-child(odd) {
+.grid>div:nth-child(odd) {
     justify-self: center;
 }
 
-.grid > div:nth-child(odd) img {
+.grid>div:nth-child(odd) img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.grid > div:nth-child(odd) p{
-  margin-top: 8px;
-  text-align: center;               
-  font-size: 13px;
+.grid>div:nth-child(odd) p {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 13px;
 }
 
-.grid > div:nth-child(even){
-  justify-self: stretch;
+.grid>div:nth-child(even) {
+    justify-self: stretch;
 }
 
-.intro-text > div:nth-child(2) p {
+.intro-text>div:nth-child(2) p {
     font-family: Calibri, "Open Sans", Arial, sans-serif;
     font-size: 18px;
     text-align: justify;
     font-weight: 300;
-    color:#000;
+    color: #000;
     line-height: 1.5;
 }
 
@@ -248,9 +256,10 @@ a.link-strong {
 
 .first-text strong:first-of-type {
     color: #08343e;
+    ;
 }
 
-.intro-text h3 + p {
+.intro-text h3+p {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
     line-height: 1.75;
@@ -283,6 +292,25 @@ a.link-strong {
     font-size: 15px;
 }
 
+.last-image a {
+    font-weight: 700;
+    color: rgb(8, 52, 62);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .separator {
     border-bottom: 4px solid #307D7F;
     padding: 5px;
@@ -292,17 +320,17 @@ a.link-strong {
     padding-bottom: 25px;
 }
 
-.stages .stage-row{
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 20px;
+.stages .stage-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-.stages .stage-row img{
-  width: 236px;
-  height: auto;
-  display: block;
+.stages .stage-row img {
+    width: 236px;
+    height: auto;
+    display: block;
 }
 
 .title {
@@ -327,7 +355,7 @@ a.link-strong {
 .btn-stage {
     display: block;
     width: fit-content;
-    background-color: rgb(48,125, 127);
+    background-color: rgb(48, 125, 127);
     color: #fff;
     font-size: 13px;
     font-weight: 300;
@@ -371,7 +399,7 @@ a.link-strong {
 }
 
 .services li:nth-child(even) a {
-    color: rgb(0,0,255);
+    color: rgb(0, 0, 255);
     font-weight: 300;
 }
 
@@ -383,10 +411,10 @@ a.link-strong {
 .services li:nth-child(odd):not(:first-child) a:hover {
     color: #3E3E3E;
     transition: color .3s ease-in-out;
-} 
+}
 
 .services span {
-    color: rgb(0,0,255);
+    color: rgb(0, 0, 255);
     padding-left: 32px;
 }
 
@@ -471,10 +499,208 @@ a.link-strong {
     right: 30px;
 }
 
+.contact {
+    padding-top: 10;
+    padding-bottom: 100px;
+
+
+}
+
+.contactez-section {
+    background-color: rgba(230, 230, 230, .8);
+    padding: 60px 0 100px;
+}
+
+.contactez-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.contactez-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+
+.contactez-left {
+    font-family: "Open Sans", sans-serif;
+}
+
+.contactez-intro {
+    font-size: 150%;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+
+
+}
+
+.contactez-socials {
+    display: flex;
+    gap: 14px;
+}
+
+.contactez-social {
+    float: left;
+    max-width: 70%;
+}
+
+
+.contactez-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    font-weight: normal;
+    color: #307D7F;
+    margin-bottom: 35px;
+}
+
+
+.contactez-form {
+    display: grid;
+    gap: 20px;
+}
+
+.contactez-row {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.contactez-form label {
+    font-size: 26px;
+    font-weight: 300;
+    color: #222;
+    margin: 0;
+}
+
+
+
+.contactez-required {
+    color: #d33;
+}
+
+.contactez-form input,
+.contactez-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 16px 14px;
+    border: 2px solid rgba(0, 0, 0, 0.35);
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+
+
+.contactez-row-message {
+    align-items: start;
+}
+
+.contactez-row-message textarea {
+    min-height: 260px;
+    resize: vertical;
+}
+
+
+.contactez-privacy {
+    text-align: center;
+    font-size: 22px;
+    margin: 15px 0 10px;
+    font-weight: 300;
+    font-family: "Open sans", sans-serif;
+}
+
+.contactez-privacy a {
+    color: #307D7F;
+    text-decoration: underline;
+}
+
+/* bouton */
+.contactez-btn {
+    justify-self: center;
+    width: 260px;
+    padding: 16px 24px;
+    border: none;
+    background-color: #307D7F;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.contactez-btn:hover {
+    filter: brightness(0.95);
+}
+
+.contactez-note {
+    margin-top: 5%;
+    font-family: "Open sans", sans-serif;
+    font-weight: 300;
+}
+
+.contactez-adresse {
+    margin-top: 5%;
+    line-height: 1.3;
+    font-weight: bold;
+    font-family: "Open sans", sans-serif;
+}
+
+@media (max-width: 770px) {
+    .contactez-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contactez-row {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .contactez-title {
+        font-size: 44px;
+    }
+
+    .contactez-form label {
+        font-size: 22px;
+    }
+
+    .contactez-btn {
+        width: min(520px, 100%);
+    }
+
+}
+
+
+
+
 
 footer {
-    background-color: rgba(243,243,243,0.8);
+    background-color: rgba(218, 218, 218, .8);
+    padding: 3% 5% 3% 5%;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    
+
 }
+.mention{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link {
+    color: #307D7F;
+    text-decoration: underline 0.5px;
+}
+
+.footer-link:hover {
+    color: #000000;
+}
+
 
 .spacer {
     height: 4px;
@@ -512,30 +738,37 @@ footer {
     width: 294px;
     height: 196px;
 }
+
 .tile .image-2 {
     width: 276px;
     height: 183px;
 }
+
 .tile .image-3 {
     width: 264px;
     height: 198px;
 }
+
 .tile .image-4 {
     width: 215px;
     height: 258px;
 }
+
 .tile .image-5 {
     width: 216px;
     height: 221px;
 }
+
 .tile .image-6 {
     width: 210px;
     height: 300px;
 }
+
 .tile .image-7 {
     width: 216px;
     height: 144px;
 }
+
 .tile .image-8 {
     width: 216px;
     height: 158px;
