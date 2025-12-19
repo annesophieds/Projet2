@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>À propos – La Courbette</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="page-apropos">
+    <div class="background-cheval"></div>
+    <div id="wrapper">
+        <header class="head-section">
+            <div class="alignment">
+                <div class="header-inner">
+                    <img class="logo" src="images-accueil/logo.png" alt="Bienvenue à la Courbette">
+                    <h1 class="site-title">Centre équestre La Courbette</h1>
+                </div>
+
+                <nav class="menu" aria-label="Navigation principale">
+                    <ul class="menu-list">
+                    <li><a href="index.html">Centre equestre</a></li>
+                    <li><a href="#">Les Tarifs</a></li>
+                    <li><a href="#">Poney-Club</a></li>
+                    <li><a href="#">Formations professionnelles</a></li>
+                    <li><a href="#">Chevaux et poneys à prendre en pension ou demi-pension</a></li>
+                    <li><a href="gite-de-groupe-la-courbette.html">Gite de groupe la Courbette</a></li>
+                    <li><a href="#">FORMATIONS BPJEPS</a></li>
+                    <li><a class="is-active" href="APropos.html">À propos</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            
+        </header>
+
+    <main>
+  <div class="alignment">
+
+    <h1>Analyse du site</h1>
+
+    <p><strong>Site analysé :</strong> Centre équestre La Courbette  
+      <a href="https://www.lacourbette.fr/" target="_blank">
+        https://www.lacourbette.fr/
+      </a>
+    </p>
+
+    <h2>Justification du choix du site</h2>
+    <p>
+      Nous avons choisi le site du centre équestre La Courbette car il est directement lié
+      à un intérêt personnel au sein de notre équipe. En effet, Julie, l’une des membres du
+      groupe, pratique régulièrement l’équitation. Ce site reflète donc une activité
+      qu’elle connaît bien et à laquelle elle s’intéresse activement.
+    </p>
+
+    <p>
+      Ce choix constitue un bon terrain d’exploration pour le projet, car la page
+      d’accueil du site est visuellement riche et contient plusieurs sections structurées,
+      incluant une barre de navigation, des images, des textes descriptifs et des liens
+      vers différentes pages secondaires. Ces éléments permettent une analyse pertinente
+      de la structure HTML, de la mise en page en CSS et du comportement réactif du site.
+    </p>
+
+    <p>
+      Les photos ci-dessous illustrent la pratique de l’équitation par Julie et renforcent
+      le lien entre le thème du site sélectionné et les intérêts réels de l’équipe.
+    </p>
+
+    <h2>Présentation générale du site</h2>
+    <p>
+      Le site La Courbette est un site vitrine destiné à présenter un centre équestre et
+      ses services : cours d’équitation, poney-club, stages, hébergement, contact et
+      informations pratiques.
+    </p>
+
+    <p>
+      Il s’adresse à un public varié (enfants, adultes, cavaliers débutants ou confirmés)
+      et met l’accent sur l’aspect visuel, la navigation claire et l’accessibilité des
+      informations.
+    </p>
+
+    <h2>Analyse HTML</h2>
+    <p>
+      Le document HTML de la page d’accueil est très volumineux, mais il suit une
+      organisation globale cohérente. La page est construite autour d’un conteneur
+      principal (<code>&lt;body&gt;</code>), dans lequel on retrouve des sections
+      clairement séparées : en-tête, navigation, contenu principal, barre latérale et pied
+      de page.
+    </p>
+
+    <p>
+      La balise <code>&lt;body&gt;</code> contient un grand nombre de classes, ce qui
+      indique que le site repose sur un système de thèmes et de modules générés
+      automatiquement. Malgré cela, la hiérarchie générale reste compréhensible et
+      cohérente et permet d’identifier facilement les grandes parties de la page :
+      l’en-tête, la navigation, le contenu principal, une barre latérale et le pied de
+      page, ce qui nous permet de comprendre rapidement comment la page est construite.
+    </p>
+
+    <p>
+      La partie supérieure, l’en-tête de la page, regroupe les éléments d’identification
+      du site : le logo, le titre et le menu principal. Le logo est intégré dans une
+      balise <code>&lt;img&gt;</code> placée à l’intérieur d’un lien
+      <code>&lt;a&gt;</code>, ce qui permet un retour direct à la page d’accueil. Le nom
+      du site apparaît sous forme de texte cliquable, structuré comme un titre principal,
+      ce qui renforce l’accessibilité et la lisibilité.
+    </p>
+
+    <pre><code>&lt;a href="https://www.lacourbette.fr/"&gt;
+  &lt;img src="image.png" alt="bienvenue à la courbette !"&gt;
+&lt;/a&gt;
+
+&lt;span&gt;Centre équestre La Courbette&lt;/span&gt;
+</code></pre>
+
+    <p>
+      L’utilisation de l’attribut <code>alt</code> sur l’image du logo est pertinente,
+      car elle apporte une description textuelle du visuel.
+    </p>
+
+    <h3>Navigation principale</h3>
+    <p>
+      La navigation est construite à partir de listes non ordonnées
+      (<code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code>), ce qui correspond à une
+      structure logique pour un menu. Certains éléments contiennent des sous-menus
+      imbriqués, permettant d’organiser les pages secondaires de manière hiérarchique.
+    </p>
+
+    <pre><code>&lt;ul class="cc-nav-level-0"&gt;
+  &lt;li&gt;&lt;a href="/"&gt;Centre equestre&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="/les-tarifs/"&gt;Les Tarifs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+    <h3>Navigation mobile</h3>
+    <p>
+      Une navigation distincte est prévue pour les écrans mobiles. Elle reprend la même
+      logique HTML, mais dans une structure séparée, ce qui permet un affichage différent
+      selon le contexte.
+    </p>
+
+    <pre><code>&lt;nav class="jtpl-mobile-navigation"&gt;</code></pre>
+
+    <p>
+      Cette séparation rend le HTML plus long, mais facilite le contrôle de l’affichage
+      selon le type d’appareil.
+    </p>
+
+    <p>
+      Le contenu principal est organisé autour de titres hiérarchisés
+      (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>,
+      <code>&lt;h3&gt;</code>) et de paragraphes
+      (<code>&lt;p&gt;</code>), ce qui facilite la lecture et la compréhension de
+      l’information.
+    </p>
+
+    <p>
+      Les images jouent un rôle central dans la page et sont généralement intégrées dans
+      des balises <code>&lt;figure&gt;</code>, parfois accompagnées d’une balise
+      <code>&lt;figcaption&gt;</code>.
+    </p>
+
+    <pre><code>&lt;figure&gt;
+  &lt;img src="image.jpg" alt="Le Manoir de La Courbette"&gt;
+  &lt;figcaption&gt;Le Manoir de La Courbette&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;iframe src="https://www.youtube-nocookie.com/embed/..."&gt;&lt;/iframe&gt;
+</code></pre>
+
+    <p>
+      La page contient aussi un formulaire de contact situé dans la barre latérale,
+      structuré avec des champs adaptés à leur fonction.
+    </p>
+
+    <pre><code>&lt;input type="text" name="nom"&gt;
+&lt;input type="email" name="email"&gt;
+&lt;textarea name="message"&gt;&lt;/textarea&gt;
+</code></pre>
+
+    <p>
+      Enfin, le pied de page regroupe des liens informatifs essentiels tels que les
+      mentions légales, la politique de confidentialité et le plan du site.
+    </p>
+
+    <pre><code>&lt;div class="j-meta-links"&gt;
+  &lt;a href="/about/"&gt;Mentions légales&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+    <p>
+      Le HTML du site est très détaillé et comporte de nombreuses classes et div,
+      principalement dues à l’utilisation d’un générateur de site. Malgré cela, la
+      hiérarchie globale est logique, les sections sont clairement identifiables et les
+      contenus bien séparés.
+    </p>
+
+    <h2>Analyse CSS :</h2>
+
+  <p>
+    Le CSS du site est principalement géré par des feuilles de style externes, générées automatiquement par le CMS
+    ( Content Management System un outil qui permet de créer et gérer un site Web sans écrire tout le code à la main )
+    utilisé pour créer le site. Cela se remarque par la présence d’un très grand nombre de classes dans le HTML
+    (par exemple cc-*, jtpl-*, j-module-*), qui servent à contrôler l’apparence, la mise en page et le comportement
+    réactif des éléments. Le CSS n’est donc pas centralisé dans un seul fichier simple, mais réparti dans plusieurs
+    feuilles de style liées au thème du site.
+  </p>
+
+  <p>
+    On observe toutefois l’utilisation ponctuelle de CSS inline, notamment à l’aide de l’attribut
+    <code>style</code>, pour ajuster certains détails visuels comme la largeur, la hauteur, les marges ou
+    l’alignement.
+  </p>
+
+  <pre><code>&lt;div class="cc-m-video-gutter" style="width: 425px;"&gt;
+</code></pre>
+
+  <p>
+    Cette pratique permet des réglages rapides, mais réduit la flexibilité du code par rapport à une règle définie
+    dans une feuille de style externe.
+  </p>
+
+  <p>
+    La mise en page repose sur une structure en blocs bien définis. Plusieurs sections sont organisées en colonnes,
+    ce qui permet d’afficher des images et du texte côte à côte. Cette organisation suggère l’utilisation d’une
+    logique de type grille ou flexbox, même si celle-ci est abstraite par le CMS. L’ensemble reste cohérent et
+    facilite la lecture du contenu.
+  </p>
+
+  <pre><code>&lt;div id="cc-m-13804589322" class="j-module n j-hgrid"&gt;
+  &lt;div class="cc-m-hgrid-column" style="width: 36.64%;"&gt;
+    &lt;div id="cc-matrix-4010315222"&gt;
+      &lt;!-- images --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="cc-m-hgrid-separator" data-display="cms-only"&gt;
+    &lt;div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="cc-m-hgrid-column last" style="width: 61.35%;"&gt;
+    &lt;div id="cc-matrix-4010315322"&gt;
+      &lt;!-- texte --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+  <p>
+    Ce type de structure est répété à plusieurs endroits de la page, ce qui confirme l’utilisation d’une grille
+    horizontale pour aligner les contenus côte à côte. Même si le positionnement précis est contrôlé par le CSS
+    du thème, le HTML reflète clairement cette logique de mise en page en colonnes, adaptée à un site vitrine riche
+    en images et en textes.
+  </p>
+
+  <p>
+    Le comportement réactif du site est principalement géré par le CSS du thème. L’existence de deux structures
+    de navigation distinctes (une pour ordinateur et une pour mobile) montre que le CSS contrôle l’affichage ou
+    le masquage de certaines sections selon la largeur de l’écran. Les images utilisent fréquemment les attributs
+    <code>srcset</code> et <code>sizes</code>, ce qui permet au navigateur de charger une image adaptée à la
+    résolution de l’écran, améliorant ainsi les performances et l’expérience utilisateur.
+  </p>
+
+  <pre><code>&lt;img srcset="image-320.jpg 320w, image-640.jpg 640w" sizes="100vw"&gt;
+</code></pre>
+
+  <p>
+    Ce mécanisme fonctionne en complément du CSS réactif pour assurer une bonne adaptation sur mobile, tablette
+    et écran large. Le comportement réactif repose sur des breakpoints définis dans le CSS du thème. On observe
+    un changement de mise en page autour des largeurs typiques des écrans mobiles (environ 768 px) et des écrans
+    plus larges (ordinateur). En dessous de ces seuils, les colonnes se réorganisent verticalement et la navigation
+    desktop est remplacée par une navigation mobile, mieux adaptée aux petits écrans.
+  </p>
+
+  <p>
+    Les couleurs, typographies et tailles de texte semblent également définies via le CSS global du site. On
+    remarque une palette cohérente dominée par des tons naturels (verts, bleus, bruns), en accord avec le thème
+    équestre. Les tailles de police varient selon le niveau de titre et le type de contenu, ce qui améliore la
+    hiérarchie visuelle et la lisibilité.
+  </p>
+
+  <p>
+    Globalement, même si le CSS est complexe et largement automatisé, il reste cohérent et efficace. Il sert de
+    base pour reproduire une version plus simple et mieux maîtrisée du site dans le cadre du projet.
+  </p>
+
+
+  </div>
+</main>
+ 
+
+    <footer class="footer">
+        <div class="mention">
+
+            <div class="footer-left">
+
+                <span class="footer-link">Mentions légales</span> | <span class="footer-link">Politique de
+                    confidentialité</span> | <span class="footer-link">Plan du site</span>
+
+
+            </div>
+            <div class="footer-droit">
+
+                <span class="footer-link">Connexion</span>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
