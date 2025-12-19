@@ -286,6 +286,127 @@
     base pour reproduire une version plus simple et mieux maîtrisée du site dans le cadre du projet.
   </p>
 
+  <section id="analyse-javascript">
+        <h2>Analyse JavaScript dans le navigateur</h2>
+
+        <p>
+          Un script JavaScript a été exécuté directement dans la console du navigateur afin
+          d’analyser dynamiquement la page d’accueil du site
+          <strong>Centre équestre La Courbette</strong>.
+          Ce script génère un rapport synthétique affiché dans la console, regroupant des
+          informations générales sur la page ainsi que des statistiques sur la structure
+          HTML et la mise en page.
+        </p>
+
+        <p>
+          Le script commence par afficher le titre de la page, son URL, la date et l’heure
+          de l’analyse ainsi que la taille actuelle de la fenêtre du navigateur. Ces données
+          permettent de situer précisément le contexte dans lequel l’analyse a été réalisée.
+        </p>
+
+        <p>
+          Ensuite, plusieurs balises HTML clés sont comptabilisées, notamment
+          <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>,
+          <code>article</code>, <code>footer</code>, ainsi que les titres, paragraphes,
+          images, liens et formulaires. Ces résultats montrent que la page d’accueil est
+          riche en contenu et structurée autour de nombreuses sections, ce qui correspond
+          à un site vitrine complet et informatif.
+        </p>
+
+        <p>
+          L’analyse des images met en évidence la présence majoritaire d’attributs
+          <code>alt</code>, ce qui indique une prise en compte de l’accessibilité. Certaines
+          images décoratives ne possèdent toutefois pas cet attribut, ce qui est fréquent
+          dans ce type de site.
+        </p>
+
+        <p>
+          Les liens ont également été analysés afin de distinguer les liens internes et
+          externes. On observe une majorité de liens internes, ce qui est cohérent avec un
+          site principalement orienté vers la navigation entre ses différentes pages.
+        </p>
+
+        <p>
+          Enfin, le script estime le nombre d’éléments utilisant les techniques de mise en
+          page modernes <strong>Flexbox</strong> et <strong>Grid</strong>, en inspectant le
+          style calculé des éléments du DOM. Cette analyse confirme que la mise en page du
+          site repose largement sur des technologies CSS adaptées à un design réactif.
+        </p>
+
+        <p>
+          Globalement, ce script JavaScript permet de mieux comprendre la structure,
+          la richesse du contenu et les choix techniques utilisés dans la page d’accueil
+          du site.
+        </p>
+
+        <h3>Script JavaScript utilisé</h3>
+
+        <pre><code>
+      console.log("==== ANALYSE JAVASCRIPT - LA COURBETTE ====");
+      console.log("Titre de la page :", document.title);
+      console.log("URL de la page :", window.location.href);
+      console.log("Date de l'analyse :", new Date().toLocaleString());
+      console.log(
+        "Taille de la fenêtre :",
+        window.innerWidth + " x " + window.innerHeight
+      );
+
+      const tags = [
+        "header", "nav", "main", "section", "article", "footer",
+        "h1", "h2", "p", "a", "img", "form", "input", "button"
+      ];
+
+      tags.forEach(tag => {
+        console.log(
+          `Nombre de &lt;${tag}&gt; :`,
+          document.querySelectorAll(tag).length
+        );
+      });
+
+      const images = document.querySelectorAll("img");
+      let avecAlt = 0;
+      let sansAlt = 0;
+
+      images.forEach(img => {
+        if (img.alt && img.alt.trim() !== "") {
+          avecAlt++;
+        } else {
+          sansAlt++;
+        }
+      });
+
+      console.log("Images avec attribut alt :", avecAlt);
+      console.log("Images sans attribut alt :", sansAlt);
+
+      const liens = document.querySelectorAll("a[href]");
+      let internes = 0;
+      let externes = 0;
+
+      liens.forEach(lien => {
+        if (lien.href.includes(window.location.hostname)) {
+          internes++;
+        } else {
+          externes++;
+        }
+      });
+
+      console.log("Liens internes :", internes);
+      console.log("Liens externes :", externes);
+
+      let flexCount = 0;
+      let gridCount = 0;
+
+      document.querySelectorAll("*").forEach(el => {
+        const style = window.getComputedStyle(el);
+        if (style.display === "flex") flexCount++;
+        if (style.display === "grid") gridCount++;
+      });
+
+      console.log("Éléments utilisant Flexbox :", flexCount);
+      console.log("Éléments utilisant Grid :", gridCount);
+        </code></pre>
+      </section>
+
 
   </div>
 </main>
