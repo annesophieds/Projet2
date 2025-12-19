@@ -46,3 +46,47 @@ diaporama.addEventListener("click", (e) => {
         closeDiaporamaBox;
     }
 });
+document.addEventListener("keydown", (e) => {
+    if (diaporama.classList.contains("hidden")) return;
+
+    if (e.key === "ArrowRight") {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage();
+    }
+
+    if (e.key === "ArrowLeft") {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage();
+    }
+
+    if (e.key === "Escape") {
+        closeDiaporamaBox();
+    }
+});
+
+/* Support tactile (swipe mobile) */
+let startX = 0;
+
+diaporama.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+});
+
+diaporama.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+
+    if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+            currentIndex = (currentIndex + 1) % images.length;
+        } else {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+        }
+        showImage();
+    }
+});
+
+/* Préchargement des images */
+images.forEach(img => {
+    const preload = new Image();
+    preload.src = img.src;
+});

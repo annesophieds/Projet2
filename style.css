@@ -1031,3 +1031,30 @@ display: flex;
     width: 48%;
   }
 }
+.captures-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.captures-flex img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Écrans larges */
+@media (min-width: 900px) {
+  .captures-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .captures-flex img {
+    width: calc(50% - 1rem);
+  }
+}
