@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
 
 <body>
@@ -57,8 +58,15 @@
             </button>
             <h2>Centre équestre et Poney-club en Ile de France</h2>
             <div class="video-wrapper">
-                <iframe frameborder="0" allowfullscreen="true" style="border: 0;" src="https://www.youtube-nocookie.com/embed/t2prPypXzqs?wmode=transparent&amp;vq=hd1080">
-                </iframe>
+            <!--Il semble y avoir un problème avec les Embedded vidéos youtube-->
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/t2prPypXzqs?si=gxJ_zU6YSA5N4GLH&start=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
             </div>
 
             <div class="grid intro-text">
@@ -127,8 +135,8 @@
                     <div>
                         <p class="title"><strong>A cheval ou à poney</strong></p>
                         <p><strong>du lundi au vendredi, en journée ( de 9h à 17h) ou en 1/2 journée ( de 14h à 17h) <br>
-                            Venez vivre au rythme des chevaux et des poneys pour une semaine en immersion.<br>
-                            Passage des galops le vendredi, en fin de stage ( du Galop1 au Galop7) </strong></p>
+                        Venez vivre au rythme des chevaux et des poneys pour une semaine en immersion.<br>
+                        Passage des galops le vendredi, en fin de stage ( du Galop1 au Galop7) </strong></p>
                         <p><strong><em>1- Découverte de l'équitation: </em></strong>Les débutants peuvent participer à des séances de découverte où ils apprendront les bases de l'équitation.
                         C'est une excellente occasion pour les enfants de se familiariser avec les poneys et de développer leur passion pour l'équitation.</p>
                         <p><strong><em>2 -Perfectionnement: </em></strong>Les cavaliers intermédiaires ont la possibilité de perfectionner leurs compétences équestres. 
@@ -183,8 +191,25 @@
                     <img src="images-accueil/images-labels/médailles.png">
                 </div>
             </section>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube-nocookie.com/embed/KLmzy6pcVpE?si=FN47Lbh67uxVpZFL&amp;start=2" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </main>
     <footer class="footer"></footer>
-  </div>
+    </div>
+        <div id="diaporama" class="diaporama hidden">
+        <span class="diaporama-close">&times;</span>
+        <span class="diaporama-prev">&#10094;</span>
+        <img class="diaporama-img" src="" alt="">
+        <span class="diaporama-next">&#10095;</span>
+    </div>
+
+  <script src="app.js"></script>
 </body>
