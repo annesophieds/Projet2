@@ -27,7 +27,7 @@
                         <li><a href="#">Les Tarifs</a></li>
                         <li><a href="#">Poney-Club</a></li>
                         <li><a href="#">Formations professionnelles</a></li>
-                        <li><a href="#">Chevaux et poneys à prendre en pension ou demi-pension</a></li>
+                        <li><a href="demipension.html">Chevaux et poneys à prendre en pension ou demi-pension</a></li>
                         <li><a class="is-active" href="gite-de-groupe-la-courbette.html">Gite de groupe la Courbette</a></li>
                         <li><a href="#">FORMATIONS BPJEPS</a></li>
                         <li><a href="APropos.html">À propos</a></li>
@@ -82,25 +82,69 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
-        <div class="mention">
+        <section class="contact-section">
 
+            <div class="contact-layout alignment">
+    
+                <aside class="contact-left">                                                                                                                                            
+                    <p class="contact-intro">
+                        <strong>
+                            Pour toutes informations<br>
+                            Contactez-nous par mail
+                        </strong>
+                    </p>
+
+                    <div class="contact-socials">
+                        <img class="contact-social facebook" src="images-accueil/logoreseau.PNG">
+                    </div>
+                </aside>
+
+                <div class="contact-right">
+                    <h1>Contact - Informations</h1>
+                    <form class="contact-form">
+                        <div class="contact-row">
+                            <label for="c-nom">Nom <span class="contact-required">*</span></label>
+                            <input id="c-nom" type="text" required>
+                        </div>
+                        <div class="contact-row">
+                            <label for="c-email">E-mail <span class="contact-required">*</span></label>
+                            <input id="c-email" type="email" required>
+                        </div>
+                        <div class="contact-row contact-row-message">
+                            <label for="c-message">Message <span class="contact-required">*</span></label>
+                            <textarea id="c-message" required></textarea>
+                        </div>
+                        <p class="contact-privacy">
+                            Notre <a href="#">Politique de confidentialité</a> s'applique.
+                        </p>
+                        <button class="contact-btn" type="submit">
+                            ENVOYER
+                        </button>
+                    </form>
+                    <p class="contact-note">
+                        <strong>Note : </strong> veuillez remplir les champs marqués d'un <span
+                            class="contact-required">*</span> .
+                    </p>
+                    <p class="contact-adresse">
+                        <i> La Courbette 1 rue du Facteur cheval 91790 Boissy sous St-Yon <br> téléphone :
+                            01.64.91.31.14 <br>e-mail: lacourbette@wanadoo.fr </i>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="mention alignment">
             <div class="footer-left">
-
                 <span class="footer-link">Mentions légales</span> | <span class="footer-link">Politique de
                     confidentialité</span> | <span class="footer-link">Plan du site</span>
-
-
             </div>
-            <div class="footer-droit">
-
+            <div class="footer-right">
                 <span class="footer-link">Connexion</span>
-
-
             </div>
         </div>
-
     </footer>
-    </div>
+
+  <script src="scripts.js"></script>
 </body>
