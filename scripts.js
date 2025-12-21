@@ -1,3 +1,6 @@
+/* Alice Rivest (20305611) */
+/* Anne-Sophie De Serres (20283072) */
+
 const images = document.querySelectorAll(".duo-gallery img");
 const diaporama = document.getElementById("diaporama");
 const diaporamaImg = document.querySelector(".diaporama-img");
