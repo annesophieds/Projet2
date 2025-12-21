@@ -5,7 +5,12 @@ const closeBtn = document.querySelector(".diaporama-close");
 const nextBtn = document.querySelector(".diaporama-next");
 const prevBtn = document.querySelector(".diaporama-prev");
 
+const buttonMenu = document.querySelector(".mobile-nav");
+const menu = document.querySelector(".menu");
+const overlay = document.querySelector(".overlay");
+
 let currentIndex = 0;
+let startX = 0;
 
 images.forEach((img, index) => {
     img.addEventListener("click", () => {
@@ -28,6 +33,27 @@ function closeDiaporamaBox() {
         diaporama.classList.add("hidden");
     }, 300);
 }
+
+function openMenu() {
+    menu.classList.add("is-open");
+    overlay.classList.add("is-open");
+    buttonMenu.classList.add("is-open");
+    buttonMenu.setAttribute("aria-expanded", "true");
+}
+
+function closeMenu() {
+    menu.classList.remove("is-open");
+    overlay.classList.remove("is-open");
+    buttonMenu.classList.remove("is-open");
+    buttonMenu.setAttribute("aria-expanded", "false");
+}
+
+buttonMenu.addEventListener("click", () => {
+    const isOpen = menu.classList.contains("is-open");
+    isOpen ? closeMenu() : openMenu();
+});
+
+overlay.addEventListener("click", closeMenu);
 
 nextBtn.addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % images.length;
@@ -64,9 +90,6 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-/* Support tactile (swipe mobile) */
-let startX = 0;
-
 diaporama.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
 });
@@ -85,7 +108,6 @@ diaporama.addEventListener("touchend", (e) => {
     }
 });
 
-/* Préchargement des images */
 images.forEach(img => {
     const preload = new Image();
     preload.src = img.src;

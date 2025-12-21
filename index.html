@@ -16,6 +16,15 @@
 </head>
 
 <body>
+    <div class="mobile-topbar">
+        <button class="mobile-nav" aria-controls="menu-principal" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="overlay"></div>
+
     <div class="background-cheval"></div>
 
     <header class="head-section">
@@ -24,7 +33,8 @@
                 <img class="logo" src="images-accueil/logo.png" alt="Bienvenue à la Courbette">
                 <h1 class="site-title">Centre équestre La Courbette</h1>
             </div>
-            <nav class="menu" aria-label="Navigation principale">
+
+            <nav class="menu"  id="menu-principal" aria-label="Navigation principale">
                 <ul class="menu-list">
                     <li><a class="is-active" href="#">Centre equestre</a></li>
                     <li><a href="#">Les Tarifs</a></li>
