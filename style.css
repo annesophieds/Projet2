@@ -744,10 +744,23 @@ display: flex;
     margin-bottom: 100px;
 }
 
-.gite h1,
+.gite h1{
+        font-size: 300%;
+        padding-top: 6%;
+        padding-bottom: 1%;
+
+}
+
+
 .gite h2,
 .gite h3 {
     padding-left: 0;
+    font-size: 200%;
+}
+
+.git-para{
+    font-size: 130%;
+    font-family: Calibri;
 }
 
 @media (max-width: 767px) {
