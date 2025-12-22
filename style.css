@@ -1171,7 +1171,7 @@ display: flex;
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
-@media (min-width: 900x) {
+@media (min-width: 900px) {
   .capture-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
