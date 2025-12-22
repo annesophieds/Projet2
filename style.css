@@ -1159,34 +1159,38 @@ display: flex;
 .capture-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+  align-items: center;
+  gap: 3rem;
+  max-width: 2500px;
+  margin: 2rem auto;
 }
 
 .capture-container img {
   width: 100%;
+  max-width: 2200px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
+
+
 @media (min-width: 900px) {
   .capture-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+    max-width: 1600px;
   }
 
   .capture-container img {
-    width: 48%;
+    width: 100%;
   }
 }
 .captures-flex {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 2rem auto;
   padding: 1rem;
 }
