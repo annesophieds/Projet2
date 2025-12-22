@@ -1161,22 +1161,55 @@ display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  max-width: 2500px;
+  max-width: 1600px;
   margin: 2rem auto;
 }
 
 .capture-container img {
   width: 100%;
-  max-width: 200px;
+  max-width: 1400px;   /* ✅ images grandes */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 
+/* ===== Captures larges (2 images grandes, une par ligne) ===== */
+@media (min-width: 900px) {
+  .capture-container {
+    display: flex;              /* ❌ pas grid */
+    flex-direction: column;     /* une image par ligne */
+    align-items: center;
+    gap: 3rem;
+    max-width: 1600px;
+    margin: 2rem auto;
+  }
 
+  .capture-container img {
+    width: 100%;
+    max-width: 1400px;          /* 🔥 images vraiment grandes */
+    height: auto;
+  }
+}
 
-/* Écrans larges */
+/* ===== Galerie photos Julie ===== */
+.captures-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1500px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.captures-flex img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== Écrans larges : 2 images côte à côte ===== */
 @media (min-width: 900px) {
   .captures-flex {
     flex-direction: row;
@@ -1187,6 +1220,7 @@ display: flex;
     width: calc(50% - 1rem);
   }
 }
+
 
 .cheval-dp{
   margin: 11%;
@@ -1318,6 +1352,4 @@ display: flex;
   .dpcolumn2{
     font-size: 18px;
   }
-  .alignment { max-width: 960px; }
-
 }
