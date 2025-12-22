@@ -1174,33 +1174,7 @@ display: flex;
 }
 
 
-@media (min-width: 900px) {
-  .capture-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    max-width: 1600px;
-  }
 
-  .capture-container img {
-    width: 100%;
-  }
-}
-.captures-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 1500px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-.captures-flex img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
 
 /* Écrans larges */
 @media (min-width: 900px) {
