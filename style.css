@@ -1167,7 +1167,7 @@ display: flex;
 
 .capture-container img {
   width: 100%;
-  max-width: 2200px;
+  max-width: 200px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
@@ -1318,4 +1318,6 @@ display: flex;
   .dpcolumn2{
     font-size: 18px;
   }
+  .alignment { max-width: 960px; }
+
 }
