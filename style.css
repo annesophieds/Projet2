@@ -657,25 +657,35 @@ display: flex;
     margin: 13px 0;
 }
 
-.section-bottom {
-    width: 100%;
-    height: 709px;
+
+.section-bottom{
+  width: 100%;
+  height: auto;          
+  padding-bottom: 30px;  
 }
 
-.row {
-    display: flex;
-    width: 100%;
+
+.section-bottom .row{
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
-.tile {
-    width: 31.66%;
-    margin-right: 2%;
+.section-bottom .tile{
+  flex: 1;
+  margin: 0;            
+  min-width: 0;
 }
 
-.tile:last-child {
-    margin-right: 0;
-    margin-left: 1.02%;
+.section-bottom .tile .image{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  object-fit: cover;
 }
+
 
 .tile .image {
     margin-top: 5px;
@@ -740,6 +750,16 @@ display: flex;
     padding-left: 0;
 }
 
+@media (max-width: 767px) {
+    .section-bottom .row{
+    flex-direction: column;   /* <- c’est ça le switch */
+    gap: 30px;
+  }
+
+  .section-bottom .tile{
+    width: 100%;
+  }
+}
 
 /* page À propos */
 
@@ -1052,6 +1072,7 @@ display: flex;
         height: auto;
     }
 
+    
     .contact-section { 
         padding: 24px 16px; 
     }
